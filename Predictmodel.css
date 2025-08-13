@@ -1,0 +1,72 @@
+body {
+    background-color: #353839;
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.title-box {
+    background-color: #2E3133;
+    color: #D3AF37; 
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.form-container {
+    background-color: #2E3133; 
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #D3AF37;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #B0892D;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #353839; 
+    color: #FDFBD4; 
+}
+
+input::placeholder {
+    color: #FDFBD4; 
+    opacity: 0.7;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+button {
+    background-color: #D3AF37; 
+    color: #2E3133; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #B0892D; /* Deep gold */
+}
