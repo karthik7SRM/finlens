@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: linear-gradient(120deg, #FDFBD4 0%, #D3AF37 100%);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.firstpage h1 {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+}
+
+.firstpage h2{
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    padding: 12px;
+}
+
+
+.firstpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+
+.nav-left, .nav-right {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+}
+
+.nav-left {
+    left: 20px;
+}
+
+.nav-right {
+    right: 20px;
+}
+
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    background: #f44336;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Text box */
+.para {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffd700;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.second {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+.second.container {
+    max-width: 700px;
+    margin: 48px auto;
+    border: 2px solid #D3AF37;
+    background: #FDFBD4;
+    padding: 36px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(53, 56, 57, 0.10);
+}
+
+.second h1 {
+    text-align: center;
+    color: #353839;
+    margin-bottom: 28px;
+    font-size: 2.1em;
+    letter-spacing: 1px;
+}
+
+.second ol {
+    font-size: 1.13em;
+    color: #2E3133;
+    padding-left: 24px;
+}
+
+.second li {
+    margin-bottom: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #B0892D;
+    background: #FDFBD4;
+    color: #353839;
+}
+
+.second li:last-child {
+    border-bottom: none;
+}

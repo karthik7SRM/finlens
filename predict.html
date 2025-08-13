@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Site</title>
+    <link rel="stylesheet" href="predict.css">
+</head>
+<body>
+    <h1>Upload CSV</h1>
+    <div class="para">
+        <p>These are the names of the columns: Name, Industry, City, years, monthly_revenue, average_transaction, top_product, number_of_customer, operational_cost</p>
+        <br>
+        <p>According to the column name given above type the input accordingly</p>
+    </div>
+
+    <form class="upload-form" id="uploadForm">
+        <label for="csvFile" class="upload-label">Upload CSV File</label>
+        <input type="file" id="csvFile" name="csvFile" accept=".csv">
+
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <div style="margin-top:8px;font-size:0.95em;color:#353839;">Uploading...</div>
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="custom-file-upload">Predict</button>
+    </form>
+</body>
+</html>
